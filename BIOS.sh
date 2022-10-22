@@ -19,7 +19,6 @@ genfstab /mnt > /mnt/etc/fstab
 echo -e "ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime" | arch-chroot /mnt
 echo -e "echo \"en_US.UTF-8 UTF-8\" > /etc/locale.gen\nlocale-gen" | arch-chroot /mnt
 echo -e "echo \"LANG=en_US.UTF-8\" > /etc/locale.conf" | arch-chroot /mnt
-echo -e "echo \"KEYMAP=jp106\" > /etc/vconsole.conf" | arch-chroot /mnt
 echo -e "echo \"$hostname\" > /etc/hostname" | arch-chroot /mnt
 echo -e "useradd -m -G wheel -s /bin/bash $username" | arch-chroot /mnt
 echo -e "passwd $username\n$password\n$password\n" | arch-chroot /mnt
