@@ -1,7 +1,7 @@
 # Archlinux auto install 
 This repo is providing install script for archlinux.
 
-#Usage
+# Usage
 ```bash
 pacman -Syu curl 
 curl -sLo install.sh
