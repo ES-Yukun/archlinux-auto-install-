@@ -1,3 +1,4 @@
+#!/bin/bash
 export username="archuser"
 export password="1234567890"
 export disk="/dev/sda"
