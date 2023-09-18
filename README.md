@@ -1,18 +1,11 @@
-# Archlinux auto install 
+# Archlinux installer
 This repo is providing install script for archlinux.
 
 # Usage
 ```bash
-pacman -Syu curl 
-curl -sLo install.sh https://raw.githubusercontent.com/ES-Yukun/archlinux-auto-install/main/UEFI.sh
-# If you are using BIOS mode, you need to change the url.
-chmod +x ./install.sh
-./install.sh
+export password="0123456789"
+export username="arch"
+export disk="/dev/sda"
+pacman -Syu curl --noconfirm
+curl -sL install.sh https://raw.githubusercontent.com/ES-Yukun/archlinux-installer/main/UEFI.sh | bash -
 ```
-
-# DEFAULT CONFIG
-- username: archuser
-- password: 1234567890
-- disk:     /dev/sda
-- hostname: archlinux
-- mirror:   cat.net
